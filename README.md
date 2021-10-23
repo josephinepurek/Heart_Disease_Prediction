@@ -7,9 +7,9 @@ Each year, 32% of all deaths around the world caused by Cardiovascular Diseases 
 ## Data Description
 Dataset used for this project is consist of 13 features and 1 target variables.
 Feature:
-1. `age` - age (in years) of each respondent (corresponding one on one with the row)
-2. `sex` - gender of each respondent (1 = male ; 0 = female)
-3. `cp` - chest pain type (4 values):  
+1. `age` - age (in years) of each respondent (corresponding one on one with the row) | continuous variable
+2. `sex` - gender of each respondent (1 = male ; 0 = female) | categorical variable
+3. `cp` - chest pain type (4 values) | ordinal categorical variable:  
 Value 0 "typical angina"  
 Value 1 "atypical angina"  
 Value 2 "non-anginal pain"  
@@ -17,7 +17,7 @@ Value 3 "asymptomatic"
 4. `trestbps` - resting blood pressure (in mm Hg on admission to the hospital)
 5. `chol` - serum cholestoral in mg/dl
 6. `fbs` - fasting blood sugar > 120 mg/dl (1 = true; 0 = false)
-7. `restecg` - resting electrocardiographic results (values 0,1,2)   
+7. `restecg` - resting electrocardiographic results (values 0,1,2) ordinal categorical variable    
 Value 0 "normal"  
 Value 1 "having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)"  
 Value 2 "showing probable or definite left ventricular hypertrophy by Estes' criteria" 
