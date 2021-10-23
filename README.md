@@ -4,6 +4,7 @@ To build model that can predict the heart disease existence based on known attri
 ## About
 Each year, 32% of all deaths around the world caused by Cardiovascular Diseases (CVDs). Cardiovascular diseases (CVDs) are a group of disorders of the heart and blood vessels. On average, 85% of the number were caused by heart attack and stroke. In this project, the prediction machine of heart diseases (CVDs) existence on a person will be built based 13 existence feature relate to human cardiovascular system.
 
+
 ## Data Description
 Dataset used for this project is consist of 13 features and 1 target variables.
 
@@ -35,18 +36,23 @@ Value 2 "downsloping"
 Target: 
 `target` - Valued as follows: 0 = no heart disease ; 1 = heart disease.
 
+
 ## Data Cleaning
 Duplicate row in this dataset can be categorized as huge, which valued 71% row of the dataset.
 There are 5 rows in dataset categorized as outliers based on analysis using feature `oldpeak` as basis for data grouping. This outliers will be dropped from final dataframe.
 
+
 ## EDA
+
 ### Data Distribution
 Target data in dataset are balancedly distributed for both of the value 0 and 1.
+
 ### Correlation
 ![image](https://user-images.githubusercontent.com/88548913/138568292-ab68a95d-86ab-49b2-b5ff-58e2dc8dd313.png)
 Based on the generated plot, we will use >0.4 as threshold for strong correlation, then we can conclude that:  
 1. Features `cp`, `thalach`, `exang`, `oldpeak`, and `ca` have strong correlation with the target variable (heart disease existence in patient)
 2. There is multicollinearity between feature `thalach` & `age` and features `slope` and `oldpeak`.
+
 
 ## Machine Learning Model
 Step on pro
