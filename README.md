@@ -48,11 +48,26 @@ There are 5 rows in dataset categorized as outliers based on analysis using feat
 Target data in dataset are balancedly distributed for both of the value 0 and 1.
 
 ### Correlation
-![image](https://user-images.githubusercontent.com/88548913/138568292-ab68a95d-86ab-49b2-b5ff-58e2dc8dd313.png)
+![image](https://user-images.githubusercontent.com/88548913/138568292-ab68a95d-86ab-49b2-b5ff-58e2dc8dd313.png)  
 Based on the generated plot, we will use >0.4 as threshold for strong correlation, then we can conclude that:  
 1. Features `cp`, `thalach`, `exang`, `oldpeak`, and `ca` have strong correlation with the target variable (heart disease existence in patient)
 2. There is multicollinearity between feature `thalach` & `age` and features `slope` and `oldpeak`.
 
 
 ## Machine Learning Model
-Step on pro
+Step to build model:
+1. Split dataset into 2; train and test dataset,
+2. Fit the model to our dataset ; using train dataset,
+3. Predict heart disease using test dataset,
+4. Measure model accuracy.
+
+Model built in this project with accuracy score:
+1. Logistic Regression (using standardized data) : 86.67%
+2. Gaussian Naive-Bayes : 85%
+3. SVC (Support Vector Classifier) : 66.67%
+4. Random Forest : 66.67%
+5. Decision Tree : 78.33%
+
+
+## Conclusion
+The selected model is Logistic Regression (using standardized data) with accuracy score 86.67%.
