@@ -1,11 +1,11 @@
 # Heart_Disease_Prediction
 To build model that can predict the heart disease existence based on known attributes from a patient. 
 
-## About
+## ABOUT
 Each year, 32% of all deaths around the world caused by Cardiovascular Diseases (CVDs). Cardiovascular diseases (CVDs) are a group of disorders of the heart and blood vessels. On average, 85% of the number were caused by heart attack and stroke. In this project, the prediction machine of heart diseases (CVDs) existence on a person will be built based 13 existence feature relate to human cardiovascular system.
 
 
-## Data Description
+## DATA DESCRIPTION
 Dataset used for this project is consist of 13 features and 1 target variables.
 
 Feature:
@@ -37,14 +37,14 @@ Target:
 `target` - Valued as follows: 0 = no heart disease ; 1 = heart disease.
 
 
-## Data Cleaning
+## DATA CLEANING
 Duplicate row in this dataset can be categorized as huge, which valued 71% row of the dataset.
 There are 5 rows in dataset categorized as outliers based on analysis using feature `oldpeak` as basis for data grouping. This outliers will be dropped from final dataframe.
 
 
-## EDA
+## EXPLORATORY DATA ANALYSIS
 
-### Data Distribution
+### Target Data Distribution
 Target data in dataset are balancedly distributed for both of the value 0 and 1.
 
 ### Correlation
@@ -54,7 +54,7 @@ Based on the generated plot, we will use >0.4 as threshold for strong correlatio
 2. There is multicollinearity between feature `thalach` & `age` and features `slope` and `oldpeak`.
 
 
-## Machine Learning Model
+## MACHINE LEARNING MODEL
 Step to build model:
 1. Split dataset into 2; train and test dataset,
 2. Fit the model to our dataset ; using train dataset,
@@ -69,5 +69,5 @@ Model built in this project with accuracy score:
 5. Decision Tree : 78.33%
 
 
-## Conclusion
+## CONCLUSION
 The selected model is Logistic Regression (using standardized data) with accuracy score 86.67%.
